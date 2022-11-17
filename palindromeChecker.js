@@ -1,15 +1,22 @@
 export default function palindromeChecker(input){
-    if(typeof input !== 'string') throw new Error('The argument passed is not a string')
+    let patt = new RegExp(/[a-z0-9]+$/)
+
     let lowerCase = input.toLowerCase()
-    var invertedArray = []
     
-    for(let i = lowerCase.length-1 ; i >= 0 ; i--){
+    var linealArray = []
+    var invertedArray = []
+
+    for(let i = 0 ; i <= lowerCase.length ; i++){
         let aux = lowerCase[i]
-        invertedArray.push(aux)
+        if(patt.test(aux)){
+            invertedArray.unshift(aux)
+            linealArray.push(aux)
+        }
     }
-
+    
     var inverted = invertedArray.join('')
+    var lineal = linealArray.join('')
 
-    if(lowerCase === inverted) return true
+    if(lineal === inverted) return true
     else return false
 }
