@@ -1,1 +1,1 @@
-Algorithms
+Algorithms based in the finals projects of the freeCodeCamp course.

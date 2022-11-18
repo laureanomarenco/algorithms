@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
-import palindromeChecker from "../palindromeChecker.js";
+import palindromeChecker from "../functions/palindromeChecker.js";
 
-describe.skip('palindrome checker', () => {
+describe.skip('Palindrome Checker', () => {
     it('should be a function', () => {
         expect(typeof palindromeChecker).toBe('function')
     })

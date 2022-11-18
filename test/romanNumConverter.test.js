@@ -1,7 +1,7 @@
-import romanNumConverter from "../romanNumConverter";
+import romanNumConverter from "../functions/romanNumConverter";
 import { describe, expect, it } from "vitest";
 
-describe('roman numeral converter', () => {
+describe.skip('Roman Numeral Converter', () => {
     it('should be a function', () => {
         expect(typeof romanNumConverter).toBe('function')
     })
